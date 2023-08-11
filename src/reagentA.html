@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>로그인</title>
+  
+<style>
+body {
+    margin: 0px;
+}
+
+.divAll {
+    width:100%;
+    height: 100vh;
+}
+
+.divUp {
+    background-color: #005D92;
+    width:100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divUpLeft {
+    /* background-color: aqua; */
+   
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    
+}
+
+#part, #acc, #manu {
+    width: 200px;
+    height: 25px;
+    
+    margin: 10px;
+}
+
+.topButton {
+    background-color: white;
+}
+
+.divUpRight {
+    /* background-color: blue; */
+    
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.btn {
+    width: 75px;
+    height: 25px;
+    margin: 5px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    border: 1px solid #DADADA;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.img {
+    margin-right: 5px;
+    height: 15px;
+}
+
+.img2 {
+    margin-right: 5px;
+    height: 12px;
+}
+
+.img1 {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.divDown{
+    /* background-color: #92d7fe; */
+    width: 100%;
+    height: 95%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    
+}
+
+.divDownLeft {
+    /* background-color: bisque; */
+    width: 77%;
+    height: 100%;
+
+    border-right: 2px solid rgb(248, 246, 246);
+}
+
+.divDownLeftUpButton {
+    background-color: #5584AC;
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.optionSearch {
+    color: rgba(0, 0, 0, .3);
+
+    width: 520px;
+    height: 25px;
+}
+
+.optionSearch option {
+  color: #000;
+}
+
+.divDownLeftList {
+    background-color: rgb(222, 239, 246);
+    width: 100%;
+    height: 95%;
+    
+    border-top: 2px solid rgb(248, 246, 246);
+}
+
+.divDownRight {
+    background-color: lightgoldenrodyellow;
+    width: 23%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.divDownRightUp {
+    /* background-color: darkturquoise; */
+    width: 100%;
+    height: 30%;
+
+    border-bottom: 1px solid rgb(248, 246, 246);
+}
+
+.divDownRightUpList {
+    /* background-color: rgb(222, 239, 246); */
+    width: 100%;
+    height: 87%;
+}
+
+.divDownRightUpListUp {
+    background-color: #b5cfe6;
+    width: 100%;
+    height: 15%;
+
+    padding-left: 20px;
+
+}
+
+.divDownRightUpListDown {
+    
+    width: 100%;
+    height: 85%;
+
+    border-top: 2px solid rgb(248, 246, 246);
+}
+
+.divDownRightUpButton {
+    background-color: #b5cfe6;
+    width: 100%;
+    height: 13%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.divDownRightDown {
+    /* background-color: darkgray; */
+    width: 100%;
+    height: 100%;
+}
+
+.divDownRightDownButton {
+    background-color: #5584AC;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.optionSearchRight{
+    color: rgba(0, 0, 0, .3);
+
+    width: 120px;
+    height: 25px;
+}
+
+.optionSearchRight option {
+  color: #000;
+}
+
+
+
+.divDownRightDownList {
+    background-color: cornsilk;
+    width: 100%;
+    height: 100%;
+
+    border-top: 2px solid rgb(248, 246, 246);
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="divAll">
+
+    <div class="divUp">
+        <div class="divUpLeft">
+            <label for="part"><div class="topButton">파트</div></label>
+            <select id="part" name="reagentPart">
+                <option value="">전체</option>
+                <option value="reagentPart1">reagentPart1</option>
+                <option value="reagentPart2">reagentPart2</option>
+                <option value="reagentPart3">reagentPart3</option>
+            </select>
+
+            <label for="acc"><div class="topButton">거래처</div></label>
+            <select id="acc" name="account">
+                <option value="">전체</option>
+                <option value="account1">account1</option>
+                <option value="account2">account2</option>
+                <option value="account3">account3</option>
+            </select>
+
+            <label for="manu"><div class="topButton">제조사</div></label>
+            <select id="manu" name="manufacturer">
+                <option value="">전체</option>
+                <option value="manufacturer1">manufacturer1</option>
+                <option value="manufacturer2">manufacturer2</option>
+                <option value="manufacturer3">manufacturer3</option>
+            </select>
+        </div>
+        <div class="divUpRight">
+            <button class="btn check"><img src="file:///C:/Users/hwict/Downloads/search.svg" class="img"> 조 회</button>
+            <button class="btn input"><img src="file:///C:/Users/hwict/Downloads/add.svg" class="img">입 력</button>
+            <button class="btn save"><img src="file:///C:/Users/hwict/Downloads/Vector.svg" class="img"> 저 장</button>
+            <button class="btn delete"><img src="file:///C:/Users/hwict/Downloads/delete.svg" class="img2">삭 제</button>
+            <button class="btn excel"><img src="file:///C:/Users/hwict/Downloads/icons8-ms-%EC%97%91%EC%85%80.svg" class="img">EXCEL</button>
+        </div>
+    </div>
+
+    <div class="divDown"> 
+        <div class="divDownLeft">
+            <div class="divDownLeftUpButton">
+                <select id="search" name="searchAll" class="optionSearch">
+                    <option value="" disabled selected hidden>Enter text to search</option>
+                    <option value="search1">search1</option>
+                    <option value="search2">search2</option>
+                    <option value="search3">search3</option>
+                </select>
+
+                <button class="btn">검 색</button>
+                <button class="btn">클리어</button>
+            </div>
+            <div class="divDownLeftList">그리드1</div>
+        </div>
+
+        <div class="divDownRight">
+            <div class="divDownRightUp">
+                <div class="divDownRightUpList">
+                    <div class="divDownRightUpListUp">시약별 검사코드 관리</div>
+                    <div class="divDownRightUpListDown">그리드2</div>
+                </div>
+                <div class="divDownRightUpButton">
+                    <button class="btn"><img src="greenUp.png" class="img1">등 록</button>
+                    <button class="btn"><img src="green.png" class="img1">제 외</button>
+                </div>
+            </div>
+        
+            <div class="divDownRightDown">
+                <div class="divDownRightDownButton">
+                    <select id="search" name="searchAllRight" class="optionSearchRight">
+                        <option value="" disabled selected hidden>Enter text</option>
+                        <option value="search1">search1</option>
+                        <option value="search2">search2</option>
+                        <option value="search3">search3</option>
+                    </select>
+    
+                    <button class="btn">검 색</button>
+                    <button class="btn">클리어</button>
+                </div>
+                <div class="divDownRightDownList">
+                    그리드3
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+   <script>  
+   </script>
+</body>
+</html>
